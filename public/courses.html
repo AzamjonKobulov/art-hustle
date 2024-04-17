@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Art Hustle Courses</title>
+  </head>
+  <body>
+    <main>
+      <!-- Courses -->
+      <section id="courses">
+        <div
+          class="max-w-base mx-auto flex flex-col lg:flex-row items-start gap-8 px-4 lg:px-8 pt-8"
+        >
+          <!-- Filters -->
+          <div
+            class="w-56 lg:w-268 hidden lg:block border border-brand-gray-6 rounded py-4 px-5"
+          >
+            <div class="flex items-center gap-2">
+              <p class="text-2xl font-bold text-brand-main-elem">Filters</p>
+              <button class="pt-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-6 stroke-brand-main-elem"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <!-- Checkboxes -->
+            <div class="divide-y divide-brand-gray-4 space-y-1">
+              <!-- Course Types -->
+              <div class="space-y-4 py-3">
+                <p class="text-lg font-bold text-brand-dark">Course Type</p>
+                <!-- Filtering Items -->
+                <div class="space-y-2 text-brand-gray">
+                  <label
+                    for="courseType1"
+                    class="filter-label ralative flex items-center gap-2 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      id="courseType1"
+                      class="relative after:w-1.5 after:h-2.5 after:hidden after:absolute after:border-b after:border-r after:border-brand-main-elem after:rotate-[40deg] after:left-1 cursor-pointer"
+                    />
+                    <p>Live courses</p>
+                  </label>
+                  <label
+                    for="courseType2"
+                    class="filter-label ralative flex items-center gap-2 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      id="courseType2"
+                      class="relative after:w-1.5 after:h-2.5 after:hidden after:absolute after:border-b after:border-r after:border-brand-main-elem after:rotate-[40deg] after:left-1 cursor-pointer"
+                    />
+                    <p>Self-placed course</p> </label
+                  ><label
+                    for="courseType3"
+                    class="filter-label ralative flex items-center gap-2 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      id="courseType3"
+                      class="relative after:w-1.5 after:h-2.5 after:hidden after:absolute after:border-b after:border-r after:border-brand-main-elem after:rotate-[40deg] after:left-1 cursor-pointer"
+                    />
+                    <p>Events</p>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Languages -->
+              <div class="space-y-4 py-3">
+                <p class="text-lg font-bold text-brand-dark">Languages</p>
+                <!-- Filtering Items -->
+                <div class="space-y-2 text-brand-gray">
+                  <label
+                    for="languages1"
+                    class="filter-label ralative flex items-center gap-2 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      id="languages1"
+                      class="relative after:w-1.5 after:h-2.5 after:hidden after:absolute after:border-b after:border-r after:border-brand-main-elem after:rotate-[40deg] after:left-1 cursor-pointer"
+                    />
+                    <p>English</p>
+                  </label>
+                  <label
+                    for="languages2"
+                    class="filter-label ralative flex items-center gap-2 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      id="languages2"
+                      class="relative after:w-1.5 after:h-2.5 after:hidden after:absolute after:border-b after:border-r after:border-brand-main-elem after:rotate-[40deg] after:left-1 cursor-pointer"
+                    />
+                    <p>German</p> </label
+                  ><label
+                    for="languages3"
+                    class="filter-label ralative flex items-center gap-2 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      id="languages3"
+                      class="relative after:w-1.5 after:h-2.5 after:hidden after:absolute after:border-b after:border-r after:border-brand-main-elem after:rotate-[40deg] after:left-1 cursor-pointer"
+                    />
+                    <p>Russian</p>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Subtitles -->
+              <div class="space-y-4 py-3">
+                <p class="text-lg font-bold text-brand-dark">Subtitles</p>
+                <!-- Filtering Items -->
+                <div class="space-y-2 text-brand-gray">
+                  <label
+                    for="subtitle1"
+                    class="filter-label ralative flex items-center gap-2 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      id="subtitle1"
+                      class="relative after:w-1.5 after:h-2.5 after:hidden after:absolute after:border-b after:border-r after:border-brand-main-elem after:rotate-[40deg] after:left-1 cursor-pointer"
+                    />
+                    <p>English</p>
+                  </label>
+                  <label
+                    for="subtitle2"
+                    class="filter-label ralative flex items-center gap-2 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      id="subtitle2"
+                      class="relative after:w-1.5 after:h-2.5 after:hidden after:absolute after:border-b after:border-r after:border-brand-main-elem after:rotate-[40deg] after:left-1 cursor-pointer"
+                    />
+                    <p>German</p> </label
+                  ><label
+                    for="subtitle3"
+                    class="filter-label ralative flex items-center gap-2 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      id="subtitle3"
+                      class="relative after:w-1.5 after:h-2.5 after:hidden after:absolute after:border-b after:border-r after:border-brand-main-elem after:rotate-[40deg] after:left-1 cursor-pointer"
+                    />
+                    <p>Russian</p>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Topic -->
+              <div class="space-y-4 py-3">
+                <p class="text-lg font-bold text-brand-dark">Topic</p>
+                <!-- Filtering Items -->
+                <div class="space-y-2 text-brand-gray">
+                  <label
+                    for="topic1"
+                    class="filter-label ralative flex items-center gap-2 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      id="topic1"
+                      class="relative after:w-1.5 after:h-2.5 after:hidden after:absolute after:border-b after:border-r after:border-brand-main-elem after:rotate-[40deg] after:left-1 cursor-pointer"
+                    />
+                    <p>Landscape</p>
+                  </label>
+                  <label
+                    for="topic2"
+                    class="filter-label ralative flex items-center gap-2 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      id="topic2"
+                      class="relative after:w-1.5 after:h-2.5 after:hidden after:absolute after:border-b after:border-r after:border-brand-main-elem after:rotate-[40deg] after:left-1 cursor-pointer"
+                    />
+                    <p>Portrait</p> </label
+                  ><label
+                    for="topic3"
+                    class="filter-label ralative flex items-center gap-2 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      id="topic3"
+                      class="relative after:w-1.5 after:h-2.5 after:hidden after:absolute after:border-b after:border-r after:border-brand-main-elem after:rotate-[40deg] after:left-1 cursor-pointer"
+                    />
+                    <p>City Landscape</p>
+                  </label>
+                  <label
+                    for="topic4"
+                    class="filter-label ralative flex items-center gap-2 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      id="topic4"
+                      class="relative after:w-1.5 after:h-2.5 after:hidden after:absolute after:border-b after:border-r after:border-brand-main-elem after:rotate-[40deg] after:left-1 cursor-pointer"
+                    />
+                    <p>Botanical Illustration</p>
+                  </label>
+                  <label
+                    for="topic5"
+                    class="filter-label ralative flex items-center gap-2 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      id="topic5"
+                      class="relative after:w-1.5 after:h-2.5 after:hidden after:absolute after:border-b after:border-r after:border-brand-main-elem after:rotate-[40deg] after:left-1 cursor-pointer"
+                    />
+                    <p>Animals</p>
+                  </label>
+                  <label
+                    for="topic6"
+                    class="filter-label ralative flex items-center gap-2 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      id="topic6"
+                      class="relative after:w-1.5 after:h-2.5 after:hidden after:absolute after:border-b after:border-r after:border-brand-main-elem after:rotate-[40deg] after:left-1 cursor-pointer"
+                    />
+                    <p>Sketching</p>
+                  </label>
+                  <label
+                    for="topic7"
+                    class="filter-label ralative flex items-center gap-2 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      id="topic7"
+                      class="relative after:w-1.5 after:h-2.5 after:hidden after:absolute after:border-b after:border-r after:border-brand-main-elem after:rotate-[40deg] after:left-1 cursor-pointer"
+                    />
+                    <p>Abstract</p>
+                  </label>
+                  <label
+                    for="topic8"
+                    class="filter-label ralative flex items-center gap-2 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      id="topic8"
+                      class="relative after:w-1.5 after:h-2.5 after:hidden after:absolute after:border-b after:border-r after:border-brand-main-elem after:rotate-[40deg] after:left-1 cursor-pointer"
+                    />
+                    <p>Live Course Archive</p>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Levels -->
+              <div class="space-y-4 py-3">
+                <p class="text-lg font-bold text-brand-dark">Levels</p>
+                <!-- Filtering Items -->
+                <div class="space-y-2 text-brand-gray">
+                  <label
+                    for="level1"
+                    class="filter-label ralative flex items-center gap-2 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      id="level1"
+                      class="relative after:w-1.5 after:h-2.5 after:hidden after:absolute after:border-b after:border-r after:border-brand-main-elem after:rotate-[40deg] after:left-1 cursor-pointer"
+                    />
+                    <p>Beginner</p>
+                  </label>
+                  <label
+                    for="level2"
+                    class="filter-label ralative flex items-center gap-2 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      id="level2"
+                      class="relative after:w-1.5 after:h-2.5 after:hidden after:absolute after:border-b after:border-r after:border-brand-main-elem after:rotate-[40deg] after:left-1 cursor-pointer"
+                    />
+                    <p>Intermediate</p> </label
+                  ><label
+                    for="level3"
+                    class="filter-label ralative flex items-center gap-2 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      id="level3"
+                      class="relative after:w-1.5 after:h-2.5 after:hidden after:absolute after:border-b after:border-r after:border-brand-main-elem after:rotate-[40deg] after:left-1 cursor-pointer"
+                    />
+                    <p>Advanced</p> </label
+                  ><label
+                    for="level4"
+                    class="filter-label ralative flex items-center gap-2 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      id="level4"
+                      class="relative after:w-1.5 after:h-2.5 after:hidden after:absolute after:border-b after:border-r after:border-brand-main-elem after:rotate-[40deg] after:left-1 cursor-pointer"
+                    />
+                    <p>All levels</p>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Duration -->
+              <div class="space-y-4 py-3">
+                <p class="text-lg font-bold text-brand-dark">Duration</p>
+                <!-- Filtering Items -->
+                <div class="space-y-2 text-brand-gray">
+                  <label
+                    for="duration1"
+                    class="filter-label ralative flex items-center gap-2 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      id="duration1"
+                      class="relative after:w-1.5 after:h-2.5 after:hidden after:absolute after:border-b after:border-r after:border-brand-main-elem after:rotate-[40deg] after:left-1 cursor-pointer"
+                    />
+                    <p>0 - 2 hours</p>
+                  </label>
+                  <label
+                    for="duration2"
+                    class="filter-label ralative flex items-center gap-2 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      id="duration2"
+                      class="relative after:w-1.5 after:h-2.5 after:hidden after:absolute after:border-b after:border-r after:border-brand-main-elem after:rotate-[40deg] after:left-1 cursor-pointer"
+                    />
+                    <p>2 - 4 hours</p> </label
+                  ><label
+                    for="duration3"
+                    class="filter-label ralative flex items-center gap-2 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      id="duration3"
+                      class="relative after:w-1.5 after:h-2.5 after:hidden after:absolute after:border-b after:border-r after:border-brand-main-elem after:rotate-[40deg] after:left-1 cursor-pointer"
+                    />
+                    <p>4 - 8 hours</p> </label
+                  ><label
+                    for="duration4"
+                    class="filter-label ralative flex items-center gap-2 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      id="duration4"
+                      class="relative after:w-1.5 after:h-2.5 after:hidden after:absolute after:border-b after:border-r after:border-brand-main-elem after:rotate-[40deg] after:left-1 cursor-pointer"
+                    />
+                    <p>8+ hours</p>
+                  </label>
+                </div>
+              </div>
+
+              <!-- For Free -->
+              <div class="space-y-4 py-3">
+                <!-- Filtering Items -->
+                <div class="space-y-2 text-brand-gray">
+                  <label
+                    for="free"
+                    class="filter-label ralative flex items-center gap-2 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      id="free"
+                      class="relative after:w-1.5 after:h-2.5 after:hidden after:absolute after:border-b after:border-r after:border-brand-main-elem after:rotate-[40deg] after:left-1 cursor-pointer"
+                    />
+                    <p>For free</p>
+                  </label>
+                </div>
+                <div class="flex items-center justify-center pt-4">
+                  <button
+                    class="text-brand-main-elem uppercase text-xs border border-brand-main-elem rounded-full hover:bg-brand-main-elem hover:text-white transition-all duration-300 pb-2 pt-2.5 px-8"
+                  >
+                    search
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Courses -->
+          <div class="flex-1 space-y-5">
+            <!-- Search Input & Filter button -->
+            <div
+              class="flex items-center gap-1 border-b border-brand-gray-6 pb-10"
+            >
+              <!-- Search Input -->
+              <div
+                class="flex-1 h-12 md:h-[3.75rem] relative border border-brand-gray-6 rounded-full pr-9"
+              >
+                <input
+                  type="text"
+                  class="w-full h-full lg:text-lg outline-none rounded-full pl-8"
+                  placeholder="Course search"
+                  id="search"
+                />
+                <label for="search" class="cursor-pointer group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-4 h-4 absolute top-1/2 -translate-y-1/2 right-5 stroke-brand-main-elem group-hover:scale-125 transition-all duration-300"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                    />
+                  </svg>
+                </label>
+              </div>
+              <!-- Filter button -->
+              <button
+                class="w-12 h-12 md:h-[3.75rem] md:w-[3.75rem] shrink-0 grid place-content-center lg:hidden border border-brand-main-elem rounded-full"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-[1.125rem] h-[1.125rem] md:w-6 md:h-6 stroke-brand-main-elem"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <!-- Courses -->
+            <p class="text-2xl font-light mb-8">Self-paced Courses</p>
+
+            <div class="space-y-7 lg:space-y-10">
+              <div div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-8">
+                <!-- Course -->
+                <a
+                  href="#"
+                  class="bg-white md:bg-transparent border rounded-md hover:shadow-course"
+                >
+                  <!-- Top -->
+                  <div class="relative">
+                    <!-- Like Button -->
+                    <button
+                      class="w-7 h-7 absolute top-2 right-2 bg-black/50 rounded-full grid place-content-center"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-5 h-5 stroke-white"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                        />
+                      </svg>
+                    </button>
+                    <!-- Image -->
+                    <img
+                      src="./assets/images/img-course.jpeg"
+                      alt="Course Image"
+                      class="w-full h-full object-cover rounded-t"
+                    />
+                    <!-- Course Duration -->
+                    <div
+                      class="absolute left-3 bottom-3 bg-black/50 text-white text-sm rounded py-0.5 px-1"
+                    >
+                      3h 30m
+                    </div>
+                  </div>
+                  <!-- Bottom -->
+                  <div
+                    class="flex flex-col text-brand-gray-2 space-y-2 pt-3.5 pb-5 px-3.5"
+                  >
+                    <div class="space-y-1.5">
+                      <!-- Cost -->
+                      <p
+                        class="flex items-center gap-1 text-brand-main-elem text-lg"
+                      >
+                        €22
+                      </p>
+                      <h5 class="text-lg text-black leading-6">
+                        Master City Landscape with Watercolor. Charles Bridge in
+                        Prague
+                      </h5>
+                    </div>
+                    <!-- Author -->
+                    <p>Rabi Alieva</p>
+                  </div>
+                </a>
+                <!-- Course -->
+                <a
+                  href="#"
+                  class="bg-white md:bg-transparent border rounded-md hover:shadow-course"
+                >
+                  <!-- Top -->
+                  <div class="relative">
+                    <!-- Like Button -->
+                    <button
+                      class="w-7 h-7 absolute top-2 right-2 bg-black/50 rounded-full grid place-content-center"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-5 h-5 stroke-white"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                        />
+                      </svg>
+                    </button>
+                    <!-- Image -->
+                    <img
+                      src="./assets/images/img-course.jpeg"
+                      alt="Course Image"
+                      class="w-full h-full object-cover rounded-t"
+                    />
+                    <!-- Course Duration -->
+                    <div
+                      class="absolute left-3 bottom-3 bg-black/50 text-white text-sm rounded py-0.5 px-1"
+                    >
+                      3h 30m
+                    </div>
+                  </div>
+                  <!-- Bottom -->
+                  <div
+                    class="flex flex-col text-brand-gray-2 space-y-2 pt-3.5 pb-5 px-3.5"
+                  >
+                    <div class="space-y-1.5">
+                      <!-- Cost -->
+                      <p
+                        class="flex items-center gap-1 text-brand-main-elem text-lg"
+                      >
+                        €22
+                      </p>
+                      <h5 class="text-lg text-black leading-6">
+                        Master City Landscape with Watercolor. Charles Bridge in
+                        Prague
+                      </h5>
+                    </div>
+                    <!-- Author -->
+                    <p>Rabi Alieva</p>
+                  </div>
+                </a>
+                <!-- Course -->
+                <a
+                  href="#"
+                  class="bg-white md:bg-transparent border rounded-md hover:shadow-course"
+                >
+                  <!-- Top -->
+                  <div class="relative">
+                    <!-- Like Button -->
+                    <button
+                      class="w-7 h-7 absolute top-2 right-2 bg-black/50 rounded-full grid place-content-center"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-5 h-5 stroke-white"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                        />
+                      </svg>
+                    </button>
+                    <!-- Image -->
+                    <img
+                      src="./assets/images/img-course.jpeg"
+                      alt="Course Image"
+                      class="w-full h-full object-cover rounded-t"
+                    />
+                    <!-- Course Duration -->
+                    <div
+                      class="absolute left-3 bottom-3 bg-black/50 text-white text-sm rounded py-0.5 px-1"
+                    >
+                      3h 30m
+                    </div>
+                  </div>
+                  <!-- Bottom -->
+                  <div
+                    class="flex flex-col text-brand-gray-2 space-y-2 pt-3.5 pb-5 px-3.5"
+                  >
+                    <div class="space-y-1.5">
+                      <!-- Cost -->
+                      <p
+                        class="flex items-center gap-1 text-brand-main-elem text-lg"
+                      >
+                        €22
+                      </p>
+                      <h5 class="text-lg text-black leading-6">
+                        Master City Landscape with Watercolor. Charles Bridge in
+                        Prague
+                      </h5>
+                    </div>
+                    <!-- Author -->
+                    <p>Rabi Alieva</p>
+                  </div>
+                </a>
+                <!-- Course -->
+                <a
+                  href="#"
+                  class="bg-white md:bg-transparent border rounded-md hover:shadow-course"
+                >
+                  <!-- Top -->
+                  <div class="relative">
+                    <!-- Like Button -->
+                    <button
+                      class="w-7 h-7 absolute top-2 right-2 bg-black/50 rounded-full grid place-content-center"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-5 h-5 stroke-white"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                        />
+                      </svg>
+                    </button>
+                    <!-- Image -->
+                    <img
+                      src="./assets/images/img-course.jpeg"
+                      alt="Course Image"
+                      class="w-full h-full object-cover rounded-t"
+                    />
+                    <!-- Course Duration -->
+                    <div
+                      class="absolute left-3 bottom-3 bg-black/50 text-white text-sm rounded py-0.5 px-1"
+                    >
+                      3h 30m
+                    </div>
+                  </div>
+                  <!-- Bottom -->
+                  <div
+                    class="flex flex-col text-brand-gray-2 space-y-2 pt-3.5 pb-5 px-3.5"
+                  >
+                    <div class="space-y-1.5">
+                      <!-- Cost -->
+                      <p
+                        class="flex items-center gap-1 text-brand-main-elem text-lg"
+                      >
+                        €22
+                      </p>
+                      <h5 class="text-lg text-black leading-6">
+                        Master City Landscape with Watercolor. Charles Bridge in
+                        Prague
+                      </h5>
+                    </div>
+                    <!-- Author -->
+                    <p>Rabi Alieva</p>
+                  </div>
+                </a>
+                <!-- Course -->
+                <a
+                  href="#"
+                  class="bg-white md:bg-transparent border rounded-md hover:shadow-course"
+                >
+                  <!-- Top -->
+                  <div class="relative">
+                    <!-- Like Button -->
+                    <button
+                      class="w-7 h-7 absolute top-2 right-2 bg-black/50 rounded-full grid place-content-center"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-5 h-5 stroke-white"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                        />
+                      </svg>
+                    </button>
+                    <!-- Image -->
+                    <img
+                      src="./assets/images/img-course.jpeg"
+                      alt="Course Image"
+                      class="w-full h-full object-cover rounded-t"
+                    />
+                    <!-- Course Duration -->
+                    <div
+                      class="absolute left-3 bottom-3 bg-black/50 text-white text-sm rounded py-0.5 px-1"
+                    >
+                      3h 30m
+                    </div>
+                  </div>
+                  <!-- Bottom -->
+                  <div
+                    class="flex flex-col text-brand-gray-2 space-y-2 pt-3.5 pb-5 px-3.5"
+                  >
+                    <div class="space-y-1.5">
+                      <!-- Cost -->
+                      <p
+                        class="flex items-center gap-1 text-brand-main-elem text-lg"
+                      >
+                        €22
+                      </p>
+                      <h5 class="text-lg text-black leading-6">
+                        Master City Landscape with Watercolor. Charles Bridge in
+                        Prague
+                      </h5>
+                    </div>
+                    <!-- Author -->
+                    <p>Rabi Alieva</p>
+                  </div>
+                </a>
+                <!-- Course -->
+                <a
+                  href="#"
+                  class="bg-white md:bg-transparent border rounded-md hover:shadow-course"
+                >
+                  <!-- Top -->
+                  <div class="relative">
+                    <!-- Like Button -->
+                    <button
+                      class="w-7 h-7 absolute top-2 right-2 bg-black/50 rounded-full grid place-content-center"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-5 h-5 stroke-white"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                        />
+                      </svg>
+                    </button>
+                    <!-- Image -->
+                    <img
+                      src="./assets/images/img-course.jpeg"
+                      alt="Course Image"
+                      class="w-full h-full object-cover rounded-t"
+                    />
+                    <!-- Course Duration -->
+                    <div
+                      class="absolute left-3 bottom-3 bg-black/50 text-white text-sm rounded py-0.5 px-1"
+                    >
+                      3h 30m
+                    </div>
+                  </div>
+                  <!-- Bottom -->
+                  <div
+                    class="flex flex-col text-brand-gray-2 space-y-2 pt-3.5 pb-5 px-3.5"
+                  >
+                    <div class="space-y-1.5">
+                      <!-- Cost -->
+                      <p
+                        class="flex items-center gap-1 text-brand-main-elem text-lg"
+                      >
+                        €22
+                      </p>
+                      <h5 class="text-lg text-black leading-6">
+                        Master City Landscape with Watercolor. Charles Bridge in
+                        Prague
+                      </h5>
+                    </div>
+                    <!-- Author -->
+                    <p>Rabi Alieva</p>
+                  </div>
+                </a>
+                <!-- Course -->
+                <a
+                  href="#"
+                  class="bg-white md:bg-transparent border rounded-md hover:shadow-course"
+                >
+                  <!-- Top -->
+                  <div class="relative">
+                    <!-- Like Button -->
+                    <button
+                      class="w-7 h-7 absolute top-2 right-2 bg-black/50 rounded-full grid place-content-center"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-5 h-5 stroke-white"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                        />
+                      </svg>
+                    </button>
+                    <!-- Image -->
+                    <img
+                      src="./assets/images/img-course.jpeg"
+                      alt="Course Image"
+                      class="w-full h-full object-cover rounded-t"
+                    />
+                    <!-- Course Duration -->
+                    <div
+                      class="absolute left-3 bottom-3 bg-black/50 text-white text-sm rounded py-0.5 px-1"
+                    >
+                      3h 30m
+                    </div>
+                  </div>
+                  <!-- Bottom -->
+                  <div
+                    class="flex flex-col text-brand-gray-2 space-y-2 pt-3.5 pb-5 px-3.5"
+                  >
+                    <div class="space-y-1.5">
+                      <!-- Cost -->
+                      <p
+                        class="flex items-center gap-1 text-brand-main-elem text-lg"
+                      >
+                        €22
+                      </p>
+                      <h5 class="text-lg text-black leading-6">
+                        Master City Landscape with Watercolor. Charles Bridge in
+                        Prague
+                      </h5>
+                    </div>
+                    <!-- Author -->
+                    <p>Rabi Alieva</p>
+                  </div>
+                </a>
+                <!-- Course -->
+                <a
+                  href="#"
+                  class="bg-white md:bg-transparent border rounded-md hover:shadow-course"
+                >
+                  <!-- Top -->
+                  <div class="relative">
+                    <!-- Like Button -->
+                    <button
+                      class="w-7 h-7 absolute top-2 right-2 bg-black/50 rounded-full grid place-content-center"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-5 h-5 stroke-white"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                        />
+                      </svg>
+                    </button>
+                    <!-- Image -->
+                    <img
+                      src="./assets/images/img-course.jpeg"
+                      alt="Course Image"
+                      class="w-full h-full object-cover rounded-t"
+                    />
+                    <!-- Course Duration -->
+                    <div
+                      class="absolute left-3 bottom-3 bg-black/50 text-white text-sm rounded py-0.5 px-1"
+                    >
+                      3h 30m
+                    </div>
+                  </div>
+                  <!-- Bottom -->
+                  <div
+                    class="flex flex-col text-brand-gray-2 space-y-2 pt-3.5 pb-5 px-3.5"
+                  >
+                    <div class="space-y-1.5">
+                      <!-- Cost -->
+                      <p
+                        class="flex items-center gap-1 text-brand-main-elem text-lg"
+                      >
+                        €22
+                      </p>
+                      <h5 class="text-lg text-black leading-6">
+                        Master City Landscape with Watercolor. Charles Bridge in
+                        Prague
+                      </h5>
+                    </div>
+                    <!-- Author -->
+                    <p>Rabi Alieva</p>
+                  </div>
+                </a>
+                <!-- Course -->
+                <a
+                  href="#"
+                  class="bg-white md:bg-transparent border rounded-md hover:shadow-course"
+                >
+                  <!-- Top -->
+                  <div class="relative">
+                    <!-- Like Button -->
+                    <button
+                      class="w-7 h-7 absolute top-2 right-2 bg-black/50 rounded-full grid place-content-center"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-5 h-5 stroke-white"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                        />
+                      </svg>
+                    </button>
+                    <!-- Image -->
+                    <img
+                      src="./assets/images/img-course.jpeg"
+                      alt="Course Image"
+                      class="w-full h-full object-cover rounded-t"
+                    />
+                    <!-- Course Duration -->
+                    <div
+                      class="absolute left-3 bottom-3 bg-black/50 text-white text-sm rounded py-0.5 px-1"
+                    >
+                      3h 30m
+                    </div>
+                  </div>
+                  <!-- Bottom -->
+                  <div
+                    class="flex flex-col text-brand-gray-2 space-y-2 pt-3.5 pb-5 px-3.5"
+                  >
+                    <div class="space-y-1.5">
+                      <!-- Cost -->
+                      <p
+                        class="flex items-center gap-1 text-brand-main-elem text-lg"
+                      >
+                        €22
+                      </p>
+                      <h5 class="text-lg text-black leading-6">
+                        Master City Landscape with Watercolor. Charles Bridge in
+                        Prague
+                      </h5>
+                    </div>
+                    <!-- Author -->
+                    <p>Rabi Alieva</p>
+                  </div>
+                </a>
+                <!-- Course -->
+                <a
+                  href="#"
+                  class="bg-white md:bg-transparent border rounded-md hover:shadow-course"
+                >
+                  <!-- Top -->
+                  <div class="relative">
+                    <!-- Like Button -->
+                    <button
+                      class="w-7 h-7 absolute top-2 right-2 bg-black/50 rounded-full grid place-content-center"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-5 h-5 stroke-white"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                        />
+                      </svg>
+                    </button>
+                    <!-- Image -->
+                    <img
+                      src="./assets/images/img-course.jpeg"
+                      alt="Course Image"
+                      class="w-full h-full object-cover rounded-t"
+                    />
+                    <!-- Course Duration -->
+                    <div
+                      class="absolute left-3 bottom-3 bg-black/50 text-white text-sm rounded py-0.5 px-1"
+                    >
+                      3h 30m
+                    </div>
+                  </div>
+                  <!-- Bottom -->
+                  <div
+                    class="flex flex-col text-brand-gray-2 space-y-2 pt-3.5 pb-5 px-3.5"
+                  >
+                    <div class="space-y-1.5">
+                      <!-- Cost -->
+                      <p
+                        class="flex items-center gap-1 text-brand-main-elem text-lg"
+                      >
+                        €22
+                      </p>
+                      <h5 class="text-lg text-black leading-6">
+                        Master City Landscape with Watercolor. Charles Bridge in
+                        Prague
+                      </h5>
+                    </div>
+                    <!-- Author -->
+                    <p>Rabi Alieva</p>
+                  </div>
+                </a>
+                <!-- Course -->
+                <a
+                  href="#"
+                  class="bg-white md:bg-transparent border rounded-md hover:shadow-course"
+                >
+                  <!-- Top -->
+                  <div class="relative">
+                    <!-- Like Button -->
+                    <button
+                      class="w-7 h-7 absolute top-2 right-2 bg-black/50 rounded-full grid place-content-center"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-5 h-5 stroke-white"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                        />
+                      </svg>
+                    </button>
+                    <!-- Image -->
+                    <img
+                      src="./assets/images/img-course.jpeg"
+                      alt="Course Image"
+                      class="w-full h-full object-cover rounded-t"
+                    />
+                    <!-- Course Duration -->
+                    <div
+                      class="absolute left-3 bottom-3 bg-black/50 text-white text-sm rounded py-0.5 px-1"
+                    >
+                      3h 30m
+                    </div>
+                  </div>
+                  <!-- Bottom -->
+                  <div
+                    class="flex flex-col text-brand-gray-2 space-y-2 pt-3.5 pb-5 px-3.5"
+                  >
+                    <div class="space-y-1.5">
+                      <!-- Cost -->
+                      <p
+                        class="flex items-center gap-1 text-brand-main-elem text-lg"
+                      >
+                        €22
+                      </p>
+                      <h5 class="text-lg text-black leading-6">
+                        Master City Landscape with Watercolor. Charles Bridge in
+                        Prague
+                      </h5>
+                    </div>
+                    <!-- Author -->
+                    <p>Rabi Alieva</p>
+                  </div>
+                </a>
+                <!-- Course -->
+                <a
+                  href="#"
+                  class="bg-white md:bg-transparent border rounded-md hover:shadow-course"
+                >
+                  <!-- Top -->
+                  <div class="relative">
+                    <!-- Like Button -->
+                    <button
+                      class="w-7 h-7 absolute top-2 right-2 bg-black/50 rounded-full grid place-content-center"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-5 h-5 stroke-white"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                        />
+                      </svg>
+                    </button>
+                    <!-- Image -->
+                    <img
+                      src="./assets/images/img-course.jpeg"
+                      alt="Course Image"
+                      class="w-full h-full object-cover rounded-t"
+                    />
+                    <!-- Course Duration -->
+                    <div
+                      class="absolute left-3 bottom-3 bg-black/50 text-white text-sm rounded py-0.5 px-1"
+                    >
+                      3h 30m
+                    </div>
+                  </div>
+                  <!-- Bottom -->
+                  <div
+                    class="flex flex-col text-brand-gray-2 space-y-2 pt-3.5 pb-5 px-3.5"
+                  >
+                    <div class="space-y-1.5">
+                      <!-- Cost -->
+                      <p
+                        class="flex items-center gap-1 text-brand-main-elem text-lg"
+                      >
+                        €22
+                      </p>
+                      <h5 class="text-lg text-black leading-6">
+                        Master City Landscape with Watercolor. Charles Bridge in
+                        Prague
+                      </h5>
+                    </div>
+                    <!-- Author -->
+                    <p>Rabi Alieva</p>
+                  </div>
+                </a>
+                <!-- Course -->
+                <a
+                  href="#"
+                  class="bg-white md:bg-transparent border rounded-md hover:shadow-course"
+                >
+                  <!-- Top -->
+                  <div class="relative">
+                    <!-- Like Button -->
+                    <button
+                      class="w-7 h-7 absolute top-2 right-2 bg-black/50 rounded-full grid place-content-center"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-5 h-5 stroke-white"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                        />
+                      </svg>
+                    </button>
+                    <!-- Image -->
+                    <img
+                      src="./assets/images/img-course.jpeg"
+                      alt="Course Image"
+                      class="w-full h-full object-cover rounded-t"
+                    />
+                    <!-- Course Duration -->
+                    <div
+                      class="absolute left-3 bottom-3 bg-black/50 text-white text-sm rounded py-0.5 px-1"
+                    >
+                      3h 30m
+                    </div>
+                  </div>
+                  <!-- Bottom -->
+                  <div
+                    class="flex flex-col text-brand-gray-2 space-y-2 pt-3.5 pb-5 px-3.5"
+                  >
+                    <div class="space-y-1.5">
+                      <!-- Cost -->
+                      <p
+                        class="flex items-center gap-1 text-brand-main-elem text-lg"
+                      >
+                        €22
+                      </p>
+                      <h5 class="text-lg text-black leading-6">
+                        Master City Landscape with Watercolor. Charles Bridge in
+                        Prague
+                      </h5>
+                    </div>
+                    <!-- Author -->
+                    <p>Rabi Alieva</p>
+                  </div>
+                </a>
+                <!-- Course -->
+                <a
+                  href="#"
+                  class="bg-white md:bg-transparent border rounded-md hover:shadow-course"
+                >
+                  <!-- Top -->
+                  <div class="relative">
+                    <!-- Like Button -->
+                    <button
+                      class="w-7 h-7 absolute top-2 right-2 bg-black/50 rounded-full grid place-content-center"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-5 h-5 stroke-white"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                        />
+                      </svg>
+                    </button>
+                    <!-- Image -->
+                    <img
+                      src="./assets/images/img-course.jpeg"
+                      alt="Course Image"
+                      class="w-full h-full object-cover rounded-t"
+                    />
+                    <!-- Course Duration -->
+                    <div
+                      class="absolute left-3 bottom-3 bg-black/50 text-white text-sm rounded py-0.5 px-1"
+                    >
+                      3h 30m
+                    </div>
+                  </div>
+                  <!-- Bottom -->
+                  <div
+                    class="flex flex-col text-brand-gray-2 space-y-2 pt-3.5 pb-5 px-3.5"
+                  >
+                    <div class="space-y-1.5">
+                      <!-- Cost -->
+                      <p
+                        class="flex items-center gap-1 text-brand-main-elem text-lg"
+                      >
+                        €22
+                      </p>
+                      <h5 class="text-lg text-black leading-6">
+                        Master City Landscape with Watercolor. Charles Bridge in
+                        Prague
+                      </h5>
+                    </div>
+                    <!-- Author -->
+                    <p>Rabi Alieva</p>
+                  </div>
+                </a>
+                <!-- Course -->
+                <a
+                  href="#"
+                  class="bg-white md:bg-transparent border rounded-md hover:shadow-course"
+                >
+                  <!-- Top -->
+                  <div class="relative">
+                    <!-- Like Button -->
+                    <button
+                      class="w-7 h-7 absolute top-2 right-2 bg-black/50 rounded-full grid place-content-center"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-5 h-5 stroke-white"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                        />
+                      </svg>
+                    </button>
+                    <!-- Image -->
+                    <img
+                      src="./assets/images/img-course.jpeg"
+                      alt="Course Image"
+                      class="w-full h-full object-cover rounded-t"
+                    />
+                    <!-- Course Duration -->
+                    <div
+                      class="absolute left-3 bottom-3 bg-black/50 text-white text-sm rounded py-0.5 px-1"
+                    >
+                      3h 30m
+                    </div>
+                  </div>
+                  <!-- Bottom -->
+                  <div
+                    class="flex flex-col text-brand-gray-2 space-y-2 pt-3.5 pb-5 px-3.5"
+                  >
+                    <div class="space-y-1.5">
+                      <!-- Cost -->
+                      <p
+                        class="flex items-center gap-1 text-brand-main-elem text-lg"
+                      >
+                        €22
+                      </p>
+                      <h5 class="text-lg text-black leading-6">
+                        Master City Landscape with Watercolor. Charles Bridge in
+                        Prague
+                      </h5>
+                    </div>
+                    <!-- Author -->
+                    <p>Rabi Alieva</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Pagination -->
+              <div
+                class="flex items-center justify-center text-brand-main-text text-sm sm:text-base gap-3 sm:gap-4"
+              >
+                <button
+                  class="hover:text-brand-main-elem transition-all duration-300"
+                >
+                  back
+                </button>
+                <button
+                  class="w-11 h-9 grid place-content-center border rounded text-brand-main-elem border-brand-main-elem transition-all duration-300"
+                >
+                  1</button
+                ><button
+                  class="w-11 h-9 grid place-content-center hover:border border-brand-border rounded hover:text-brand-main-elem hover:border-brand-main-elem transition-all duration-300"
+                >
+                  2</button
+                ><button
+                  class="w-11 h-9 grid place-content-center hover:border border-brand-border rounded hover:text-brand-main-elem hover:border-brand-main-elem transition-all duration-300"
+                >
+                  3</button
+                ><button
+                  class="w-11 h-9 grid place-content-center hover:border border-brand-border rounded hover:text-brand-main-elem hover:border-brand-main-elem transition-all duration-300"
+                >
+                  4</button
+                ><button
+                  class="w-11 h-9 grid place-content-center hover:border border-brand-border rounded hover:text-brand-main-elem hover:border-brand-main-elem transition-all duration-300"
+                >
+                  5
+                </button>
+                <button
+                  class="hover:text-brand-main-elem transition-all duration-300"
+                >
+                  forward
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
