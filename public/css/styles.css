@@ -569,6 +569,9 @@ body{
 .col-span-2{
   grid-column: span 2 / span 2;
 }
+.row-span-2{
+  grid-row: span 2 / span 2;
+}
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -608,6 +611,12 @@ body{
 }
 .mt-\[1\.125rem\]{
   margin-top: 1.125rem;
+}
+.mt-10{
+  margin-top: 2.5rem;
+}
+.mt-8{
+  margin-top: 2rem;
 }
 .block{
   display: block;
@@ -698,6 +707,15 @@ body{
 }
 .h-screen{
   height: 100vh;
+}
+.h-40{
+  height: 10rem;
+}
+.h-48{
+  height: 12rem;
+}
+.h-\[8\.25rem\]{
+  height: 8.25rem;
 }
 .max-h-\[32\.6875rem\]{
   max-height: 32.6875rem;
@@ -1395,6 +1413,9 @@ body{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.text-black\/50{
+  color: rgb(0 0 0 / 0.5);
+}
 .line-through{
   text-decoration-line: line-through;
 }
@@ -1701,7 +1722,16 @@ input[type='radio']:checked + label span{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.group:hover .group-hover\:text-brand-main-elem{
+  --tw-text-opacity: 1;
+  color: rgb(1 172 183 / var(--tw-text-opacity));
+}
+
 @media (min-width: 640px){
+
+  .sm\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
 
   .sm\:mt-5{
     margin-top: 1.25rem;
@@ -1713,6 +1743,14 @@ input[type='radio']:checked + label span{
 
   .sm\:block{
     display: block;
+  }
+
+  .sm\:flex{
+    display: flex;
+  }
+
+  .sm\:hidden{
+    display: none;
   }
 
   .sm\:h-32{
@@ -1731,6 +1769,10 @@ input[type='radio']:checked + label span{
     height: 100%;
   }
 
+  .sm\:h-40{
+    height: 10rem;
+  }
+
   .sm\:w-28{
     width: 7rem;
   }
@@ -1745,6 +1787,10 @@ input[type='radio']:checked + label span{
 
   .sm\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .sm\:flex-row{
@@ -1913,6 +1959,22 @@ input[type='radio']:checked + label span{
 
 @media (min-width: 1024px){
 
+  .lg\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
+
+  .lg\:row-span-2{
+    grid-row: span 2 / span 2;
+  }
+
+  .lg\:mt-8{
+    margin-top: 2rem;
+  }
+
+  .lg\:mt-10{
+    margin-top: 2.5rem;
+  }
+
   .lg\:block{
     display: block;
   }
@@ -1923,6 +1985,10 @@ input[type='radio']:checked + label span{
 
   .lg\:hidden{
     display: none;
+  }
+
+  .lg\:h-\[29\.6875rem\]{
+    height: 29.6875rem;
   }
 
   .lg\:max-h-\[26rem\]{
@@ -1975,6 +2041,10 @@ input[type='radio']:checked + label span{
 
   .lg\:gap-5{
     gap: 1.25rem;
+  }
+
+  .lg\:gap-7{
+    gap: 1.75rem;
   }
 
   .lg\:gap-x-8{
