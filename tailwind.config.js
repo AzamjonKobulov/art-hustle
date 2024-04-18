@@ -45,6 +45,9 @@ module.exports = {
         'user-course': '0 10px 14px 1px rgba(0,0,0,.15)',
         'course-date-drop': '0px 10px 40px 0px #0000001A',
       },
+      backgroundImage: {
+        blog: "url('/public/assets/images/img-cart-2.jpeg')",
+      },
     },
   },
   plugins: [],
